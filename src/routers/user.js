@@ -3,6 +3,7 @@ const router = new express.Router()
 const User = require('../models/user')
 const auth = require('../middleware/auth')
 
+// sign up route
 router.post('/users', async (req, res) => {
   const user = new User(req.body)
 
